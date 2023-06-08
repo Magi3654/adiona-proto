@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navigation extends Component{
     render(){
@@ -6,30 +7,15 @@ class Navigation extends Component{
             <nav className='navbar navbar-light bg-light'>
                 <img src="logo_adiona.png" id="logo"/>
 
-                <div className="navbar nav" id="Options">
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Vuelos</a>
-                    </div>
-                    
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Hoteles</a>
-                    </div>
-
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Cruceros</a>
-                    </div>
-
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Autos</a>
-                    </div>
-
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Tools</a>
-                    </div>
-
-                    <div className="nav-item">
-                        <a className="nav-link" href="#">Ofertas</a>
-                    </div>
+                <div className="navbar" id="navbarNav">
+                    <ul className="navbar nav">
+                        <Link to="/Vuelos" className="nav-link">Vuelos</Link>
+                        <Link Link to="/Hoteles" className="nav-link">Hoteles</Link>
+                        <Link Link to="/Cruceros" className="nav-link">Cruceros</Link>
+                        <Link Link to="/Autos" className="nav-link">Autos</Link>
+                        <Link Link to="/Tools" className="nav-link">Tools</Link>
+                        <Link Link to="/Ofertas" className="nav-link">Ofertas</Link>
+                    </ul>
                 </div>
 
                 <button className="navbar-toggler" type="button" >

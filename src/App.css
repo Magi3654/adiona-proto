@@ -29,6 +29,11 @@
   margin-top: 50%;
 }
 
+.sign_in {
+  color: white;
+  text-decoration: none;
+}
+
 .btn_login {
   background: #c2e59c; 
   background: -webkit-linear-gradient(to right, #0C3547, #3C98A3);  /* Chrome 10-25, Safari 5.1-6 */
@@ -63,8 +68,10 @@ img {
   width: 13%;
 }
 
-nav{
-  padding: 1rem 1rem 1rem 1rem;
+.nav-link{
+  color: #268598;
+  font-size: 1.1rem;
+  text-align: left;
 }
 
 .App-logo {
