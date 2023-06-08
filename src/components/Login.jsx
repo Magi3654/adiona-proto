@@ -1,15 +1,6 @@
 import { Link } from "react-router-dom";
-import userJSON from "../json/users.json"
 
 const Login = () => {
-
-	const signIn = () => {
-		console.log(userJSON)
-	}
-
-	const onSubmit = (e) => {
-		e.preventDefault()
-	}
 
 	return(
 		<section className="h-100 gradient-form">
@@ -30,7 +21,7 @@ const Login = () => {
 											<a className="sign_up" href="#!">Sign up</a>
 										</div>
 										
-										<form className="text-center" onSubmit={onSubmit}>
+										<form className="text-center">
 											<div className="form-outline mb-4 mb-2">
 												<input type="email" id="form2Example11" className="form-control" placeholder="Email address" />
 											</div>
@@ -40,7 +31,7 @@ const Login = () => {
 											</div>
 
 											<div className="text-center pt-3 mb-2 pb-1">
-												<button className="btn_login" type="submit" onClick={signIn}>
+												<button className="btn_login" type="submit">
 													<Link to="/Principal" className="sign_in">
 														Sign in
 													</Link>
