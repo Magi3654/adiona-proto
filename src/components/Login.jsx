@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Login = () => {
+
 	return(
 		<section className="h-100 gradient-form">
 			<div className="container py-5 h-100">
@@ -32,8 +33,7 @@ const Login = () => {
 											<div className="text-center pt-3 mb-2 pb-1">
 												<button className="btn_login" type="submit">
 													<Link to="/Principal" className="sign_in">
-													Sign in
-
+														Sign in
 													</Link>
 												</button>
 											</div>
@@ -45,7 +45,7 @@ const Login = () => {
 									</div>
 								</div>
 
-								<div className="Design d-none d-sm-none d-md-block">
+								<div className="Design d-none d-sm-none d-md-none d-lg-block">
 									<div className="text-white px-3 py-4 p-md-5 mx-md-4">
 										<h4 className="slogan">Travel with experience</h4>
 									</div>
