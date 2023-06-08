@@ -1,19 +1,21 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Carousel from "./Carousel";
 
 class Navigation extends Component{
     render(){
         return(
+            <>
             <nav className='navbar navbar-light bg-light'>
-                <img src="logo_adiona.png" id="logo"/>
-
+                <img src="logo_adiona.png" className="logo"/>
+                
                 <div className="navbar" id="navbarNav">
-                    <ul className="navbar nav">
+                    <ul className="navbar_items nav">
                         <Link to="/Vuelos" className="nav-link">Vuelos</Link>
                         <Link Link to="/Hoteles" className="nav-link">Hoteles</Link>
                         <Link Link to="/Cruceros" className="nav-link">Cruceros</Link>
                         <Link Link to="/Autos" className="nav-link">Autos</Link>
-                        <Link Link to="/Tools" className="nav-link">Tools</Link>
+                        <Link Link to="/Tours" className="nav-link">Tours</Link>
                         <Link Link to="/Ofertas" className="nav-link">Ofertas</Link>
                     </ul>
                 </div>
@@ -36,7 +38,9 @@ class Navigation extends Component{
                     </ul>
                 </div>
             </nav>
-        )
+            <Carousel/>
+            </>
+            )
     }
 }
 
